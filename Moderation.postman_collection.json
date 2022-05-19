@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "226c5fc3-9d4e-442c-bf99-81f3cc7fc4cc",
+		"name": "Moderation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "send post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":2,\r\n    \"post\":\"I am kshitij. No\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/post",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_name\" : \"author1\",\r\n    \"password\" : \"auth@123\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/user-login",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"user-login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approve-or-reject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"post_id\":1,\r\n    \"status\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/approve-or-reject",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"approve-or-reject"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
