@@ -13,3 +13,7 @@ There three apis
     a.  this api is for moderator to approve or reject
     b.  send post_id(you can get from list of flagged posts) and new
         status as body
+
+
+
+Also uploaded postman collection and sql dump
